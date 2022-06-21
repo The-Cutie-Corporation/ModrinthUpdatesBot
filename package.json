@@ -1,0 +1,27 @@
+{
+  "name": "modrinth-bot",
+  "version": "2.0.0",
+  "description": "Search Modrinth for projects and get notified when a project gets updated.",
+  "type": "module",
+  "main": "build/bot.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "deploy": "node build/deploy-commands.js",
+    "global-deploy": "node build/global-deploy-commands.js"
+  },
+  "author": "Lily & Aubrey",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^0.4.1",
+    "discord-api-types": "^0.34.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.1",
+    "sequelize": "^6.19.2",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}
